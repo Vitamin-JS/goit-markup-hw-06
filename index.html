@@ -71,7 +71,16 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="submit" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+        </div>
+        <!-- Модальное окно Героя -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <form action="">
+              <p>Модальное окно Героя   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cupiditate illum a vitae, quisquam eaque inventore itaque temporibus id, sapiente fugiat animi laborum aliquid unde vero saepe libero ad? Suscipit?</p>
+            </form>
+            <button data-modal-close>Закрыть</button>
+          </div>
         </div>
       </section>
       <!-- блок Преимущества -->
@@ -584,5 +593,7 @@
       </div>
       <p class="madeByStudents">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="./js/modal.js"></script>
+    </body>
   </body>
 </html>
