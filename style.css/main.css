@@ -262,6 +262,7 @@ body {
 
   opacity: 1;
   transition: opacity 250ms ease-in;
+  z-index: 999;
 }
 
 /* Скрытие модалки */
@@ -282,7 +283,7 @@ body {
   left: 50%;
   max-height: 800px;
   min-height: 400px;
-  max-width: 600px;
+  width: 528px;
   padding: 20px 30px;
   background-color: rgb(255, 255, 255);
   transform: translate(-50%, -50%) scale(1);
@@ -367,6 +368,7 @@ body {
   background-color: var(--wtah-we-do-bg);
   width: calc((1170px - 60px) / 3);
   transform: translateY(-100%);
+  z-index: 2;
 }
 
 /* Отступы UL блока Чем мы занимаемся */
@@ -380,6 +382,7 @@ body {
 .whatWeDo-list {
   position: relative;
   width: calc((1170px - 60px) / 3);
+  z-index: 1;
 }
 
 .whatWeDo-list:not(:last-child) {
