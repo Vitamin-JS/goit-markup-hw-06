@@ -326,6 +326,7 @@ body {
   background-image: url(../images/images-for-modal/close-black.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 /* Св-ва заголовка Модального окна */
@@ -379,11 +380,16 @@ textarea {
   margin-bottom: 30px;
   height: 24px;
 }
-
+/* Стили текста чекбокса */
 .policy-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+/* Стили ссылки в текстк Чекбокса */
+.policy-link {
+  color: var(--accent-color-blue);
 }
 
 /* Стили кнопки Отправить Модального окна  */
@@ -401,6 +407,7 @@ textarea {
   padding: 0;
   background-color: var(--accent-color-blue);
   color: var(--white-bg-color);
+  cursor: pointer;
 }
 
 /* ================================Свойства блока Преимущества====================== */
