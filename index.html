@@ -78,25 +78,25 @@
         <!-- -----------------------------------------Модальное окно Героя----------- -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form action="">
+            <form action="" class="form">
               <button data-modal-close>Закрыть</button>
-              <h2>Оставьте свои данные, мы вам перезвоним</h2>
+              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
               <!-- -----Поле Имя--------- -->
               <div class="form-field">
                 <label for="">
-                  <input type="text" name="first-name" placeholder="Имя">
+                  <input class="input-area"  type="text" name="first-name" placeholder="Имя">
                 </label>
               </div>
               <!-- -----Поле Телефон--------- -->
               <div class="form-field">
                 <label for="">
-                  <input type="tel" name="phone" placeholder="Телефон">
+                  <input class="input-area" type="tel" name="phone" placeholder="Телефон">
                 </label>
               </div>
               <!-- -----Поле e-mail--------- -->
               <div class="form-field">
                 <label for="">
-                  <input type="email" name="email" placeholder="Почта">
+                  <input class="input-area" type="email" name="email" placeholder="Почта">
                 </label>
               </div>
               <!-- -----Поле Комментарий--------- -->
@@ -109,9 +109,8 @@
                 <input type="checkbox" name="policy" id="policy" >
                 <label for="policy">Соглашаюсь с рассылкой и принимаю <a href=""><span>Условия договора</span></a></label>
               </div>
+              <button type="submit">Отправить</button>
             </form>
-            <button type="submit">Отправить</button>
-
           </div>
         </div>
       </section>
