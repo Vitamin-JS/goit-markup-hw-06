@@ -318,6 +318,17 @@ textarea {
   right: 0;
   top: 0;
   transform: translate(50%, -50%);
+  background-image: url(../images/images-for-modal/close-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close::befor {
+  content: " ";
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/images-for-modal/close-black.svg);
+  background-size: contain;
 }
 
 /* Св-ва заголовка Модального окна */
@@ -327,6 +338,8 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* Cв-ва поля Имя */
