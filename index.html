@@ -79,9 +79,39 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form action="">
-              <p>Оставьте свои данные, мы вам перезвоним</p>
+              <button data-modal-close>Закрыть</button>
+              <h2>Оставьте свои данные, мы вам перезвоним</h2>
+              <!-- -----Поле Имя--------- -->
+              <div class="form-field">
+                <label for="">
+                  <input type="text" name="first-name" placeholder="Имя">
+                </label>
+              </div>
+              <!-- -----Поле Телефон--------- -->
+              <div class="form-field">
+                <label for="">
+                  <input type="tel" name="phone" placeholder="Телефон">
+                </label>
+              </div>
+              <!-- -----Поле e-mail--------- -->
+              <div class="form-field">
+                <label for="">
+                  <input type="email" name="email" placeholder="Почта">
+                </label>
+              </div>
+              <!-- -----Поле Комментарий--------- -->
+              <div class="form-comment">
+                <label for="coment"></label>
+                <textarea class="comment" name="comment" id="coment" cols="20" rows="5" placeholder="Комментарий"></textarea>
+              </div>
+              <!-- -----Поле Чекбокс Условия договора--------- -->
+              <div class="form-field">
+                <input type="checkbox" name="policy" id="policy" >
+                <label for="policy">Соглашаюсь с рассылкой и принимаю <a href=""><span>Условия договора</span></a></label>
+              </div>
             </form>
-            <button data-modal-close>Закрыть</button>
+            <button type="submit">Отправить</button>
+
           </div>
         </div>
       </section>
