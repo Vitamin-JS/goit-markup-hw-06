@@ -435,6 +435,8 @@ textarea {
 }
 /* Стили текста чекбокса */
 .policy-text {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -476,6 +478,39 @@ textarea {
 .input-area:focus ~ span > .modal-icon,
 .input-area:not(:placeholder-shown) ~ span > .modal-icon {
   fill: var(--accent-color-blue);
+}
+
+/* Стили Чекбокса */
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Стили иконки чекбокса спана */
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-left: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 4px;
+}
+
+/* Стили иконки Чекбокса при состоянии Чекд */
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color-blue);
+  border: none;
+  background-image: url(../images/images-for-modal/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
 }
 
 /* ================================Свойства блока Преимущества====================== */
