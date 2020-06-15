@@ -378,6 +378,7 @@ body {
 .input-area:focus,
 .input-area:not(:placeholder-shown) {
   border: 1px solid var(--accent-color-blue);
+  outline: var(--accent-color-blue);
 }
 
 /* Размер поля комментария */
@@ -417,6 +418,13 @@ textarea {
 .comment:not(:placeholder-shown) + .comment-label {
   transform: translateY(-40px);
   color: var(--accent-color-blue);
+}
+
+/* Анимация бордера поля комменарий Модального окна */
+.comment:focus,
+.comment:not(:placeholder-shown) {
+  border: 1px solid var(--accent-color-blue);
+  outline: var(--accent-color-blue);
 }
 
 /* Стили поля Условия Договора */
