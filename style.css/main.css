@@ -412,6 +412,13 @@ textarea {
   transition: transform 250ms linear;
 }
 
+/* Анимация метки label поля комментарий */
+.comment:focus + .comment-label,
+.comment:not(:placeholder-shown) + .comment-label {
+  transform: translateY(-40px);
+  color: var(--accent-color-blue);
+}
+
 /* Стили поля Условия Договора */
 .policy-field {
   position: relative;
