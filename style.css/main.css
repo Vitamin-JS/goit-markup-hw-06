@@ -463,6 +463,21 @@ textarea {
   cursor: pointer;
 }
 
+/* Стили иконок инпутов Модального окна */
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms linear;
+}
+
+/* Анимация иконок SVG */
+.input-area:focus ~ span > .modal-icon,
+.input-area:not(:placeholder-shown) ~ span > .modal-icon {
+  fill: var(--accent-color-blue);
+}
+
 /* ================================Свойства блока Преимущества====================== */
 /* Отступы блока Преимущества */
 .advatn {
