@@ -416,7 +416,7 @@ textarea {
 /* Анимация метки label поля комментарий */
 .comment:focus + .comment-label,
 .comment:not(:placeholder-shown) + .comment-label {
-  transform: translateY(-40px);
+  transform: translateY(-30px);
   color: var(--accent-color-blue);
 }
 
