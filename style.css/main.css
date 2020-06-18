@@ -370,7 +370,8 @@ body {
 /* Анимация меток Label */
 .input-area:focus + .form-label,
 .input-area:not(:placeholder-shown) + .form-label {
-  transform: translateY(-40px);
+  /* transform: translateY(-40px); */
+  transform: translate(-26px, -40px);
   color: var(--accent-color-blue);
 }
 
@@ -445,6 +446,11 @@ textarea {
 /* Стили ссылки в текстк Чекбокса */
 .policy-link {
   color: var(--accent-color-blue);
+}
+
+/* Пробел в тексте */
+.space {
+  color: rgba(0, 0, 0, 0);
 }
 
 /* Стили кнопки Отправить Модального окна  */
